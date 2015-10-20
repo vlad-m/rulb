@@ -1762,16 +1762,20 @@ body.tax-project_category .wp-pagenavi {
     }
     .yandex-pay {
         text-align: center;
-        margin: 0 -50px;
+        margin: 0 -35px;
     }
 }
 
 @media only screen and ( max-width: 580px ) {
     .yandex-pay {
-        -webkit-transform: scale(0.85);
-        -moz-transform: scale(0.85);
-        -ms-transform: scale(0.85);
-        transform: scale(0.85);
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        transform: scale(0.7);
+        -webkit-transform-origin: 0;
+        -moz-transform-origin: 0;
+        -ms-transform-origin: 0;
+        transform-origin: 0;
     }
 }
 
