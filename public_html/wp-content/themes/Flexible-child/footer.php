@@ -1,7 +1,6 @@
 			</div> 	<!-- end #main-area -->
 
 		<footer id="main_footer" class="clearfix">
-<div><a href="http://elibrary.ru/title_about.asp?id=50831" title="eLibrary" target="_blank"><img src="http://elibrary.ru/images/elibrary5.gif" style="width: 100%; max-width: 200px; height: auto;"></a>&nbsp;<a href="https://scholar.google.ru/scholar?as_q=&as_epq=&as_oq=&as_eq=&as_occt=any&as_sauthors=&as_publication=Russian+Linguistic+Bulletin&as_ylo=&as_yhi=&btnG=&hl=ru&as_sdt=0%2C5" title="Russian Linguistic Bulletin в Google Академия" target="_blank"><img src="http://rulb.org/wp-content/uploads/2015/08/Google_Scholar_logo.png" style="width: 100%; max-width: 200px; height: auto;"></a>&nbsp;<a href="http://cyberleninka.ru/journal/n/russian-linguistic-bulletin" title="Russian Linguistic Bulletin в Киберленинке" target="_blank"><img src="http://rulb.org/wp-content/uploads/2015/08/cyberleninka.gif" style="width: 100%; max-width: 200px; height: auto;"></a>&nbsp;<a href="https://socionet.ru/collection.xml?h=spz:cyberleninka:32463" title="Russian Linguistic Bulletin в Соционет" target="_blank"><img src="http://rulb.org/wp-content/uploads/2015/08/socionet.png" style="width: 100%; max-width: 200px; height: auto;"></a> <a href="http://rulb.org/indexing/" target="_blank">Смотреть все</a></div>
 			<p id="copyright"> <!--LiveInternet counter--><script type="text/javascript"><!--
 document.write("<a href='//www.liveinternet.ru/click' "+
 "target=_blank><img src='//counter.yadro.ru/hit?t41.6;r"+

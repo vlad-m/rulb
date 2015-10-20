@@ -276,7 +276,7 @@
 		if ( et_container_width < 440 ) return;
 
 		$blog_grid_item.each( function(){
-			var this_height = $(this).height();
+			var this_height = $(this).outerHeight();
 
 			if ( home_blog_post_min_height < this_height ) home_blog_post_min_height = this_height;
 		} ).each( function(){

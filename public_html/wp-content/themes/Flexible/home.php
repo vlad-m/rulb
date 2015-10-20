@@ -3,7 +3,7 @@
 <?php if ( 'on' == et_get_option('flexible_featured', 'on') && is_home() ) get_template_part( 'includes/featured', 'home' ); ?>
 
 <?php if ( 'on' == et_get_option('flexible_quote','on') ) { ?>
-	<div id="quote">
+	<div class="top-quote">
 		<h2><?php echo esc_html( et_get_option('flexible_quote_heading') ); ?></h2>
 		<p><?php echo esc_html( et_get_option('flexible_quote_text') ); ?></p>
 	</div> <!-- end #quote -->
@@ -64,11 +64,7 @@
 		<div id="blog-grid">
 			<?php $i = 0; ?>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<?php
-					$i++;
-					$last_class = ( $i % 3 == 0 ) ? ' last' : '';
-				?>
-				<article id="post-<?php the_ID(); ?>" <?php post_class('blog-item' . $last_class); ?>>
+				<article id="post-<?php the_ID(); ?>" class="blog-item">
 					<span class="date"><?php echo get_the_time( 'M' ); ?><strong><?php echo get_the_time( 'd' ); ?></strong></span>
 
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>

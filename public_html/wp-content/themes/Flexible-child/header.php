@@ -92,9 +92,18 @@
 </head>
 <body <?php body_class(); ?>>
 	<div id="container">
-<div style="position: absolute;
-top: 30px;
-right: 0;"><a href="https://www.facebook.com/rulb.journal" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/fb3sm.png"></a> <a href="https://twitter.com/RulbEditors" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/twsm.png"></a> <a href="http://vk.com/rulborg" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/vksm.png"></a> </div>		<?php do_action('et_header_top'); ?>
+<div class="social-links">
+	<a href="https://www.facebook.com/rulb.journal" target="_blank">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/fb3sm.png">
+	</a>
+	<a href="https://twitter.com/RulbEditors" target="_blank">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/twsm.png">
+	</a>
+	<a href="http://vk.com/rulborg" target="_blank">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/vksm.png">
+	</a>
+</div>
+<?php do_action('et_header_top'); ?>
 		<header class="clearfix">
 			<div id="logo-area">
 				<?php $bloginfo_name = get_bloginfo( 'name' ); ?>
