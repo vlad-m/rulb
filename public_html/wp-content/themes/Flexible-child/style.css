@@ -1,0 +1,119 @@
+/*
+Theme Name: Flexible-child
+Theme URI: 
+Description: Дочерняя тема Flexible
+Version: 1.0.0
+Author: Юсупов Артем
+Author URI: portfolio.itshnick.ru
+Template: Flexible
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: 
+*/
+
+@import url("../Flexible/style.css");
+@import url("../Flexible/css/et-upload_images.css");
+@import url("../Flexible/css/ie6style.css");
+@import url("../Flexible/css/ie7style.css");
+@import url("../Flexible/css/ie8style.css");
+
+.article_references ol {
+    list-style: decimal !important;
+    padding-left: 20px;
+}
+
+/*
+rus_authors
+rus_work
+rus_article_name
+$rus_annotation
+$rus_keywords
+$article_pages
+
+$eng_authors
+$eng_work
+$eng_article_name
+$eng_annotation
+$eng_keywords
+
+author_email
+
+$references
+
+*/
+
+.rus_authors,
+.rus_article_name,
+.eng_authors,
+.eng_article_name {
+    font-weight: bold;
+}
+.rus_authors,
+.rus_work,
+.rus_article_name,
+.rus_annotation,
+.rus_keywords,
+.article_pages,
+.eng_authors,
+.eng_work,
+.eng_article_name,
+.eng_annotation,
+.eng_keywords,
+.author_email,
+.article_id,
+.article_doi,
+.article_pdf_url,
+.references {
+    padding-bottom: 14px;
+}
+
+.rus_annotation span,
+.eng_annotation span {
+    float: right;
+    font-style: italic;
+    font-weight: bold;
+    padding-bottom: 8px;
+    width: 100%;
+    text-align: right;
+}
+
+.article_id,
+.article_doi,
+.article_pdf_url,
+.rus_authors,
+.rus_work,
+.rus_article_name,
+.eng_authors,
+.eng_work,
+.eng_article_name {
+    text-align: center;
+}
+
+.rus_annotation,
+.eng_annotation {
+    text-align: justify;
+}
+
+.references {
+    text-align: center;
+    font-weight: bold;
+}
+
+.issue_name {
+    padding: 40px 50px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+.article_category {
+    padding: 20px 50px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.article_table {
+    width: 100%;
+}
+.article_table td {
+    padding: 10px 20px;
+}

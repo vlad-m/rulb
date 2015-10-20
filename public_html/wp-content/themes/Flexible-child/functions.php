@@ -1,0 +1,65 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: arti
+ * Date: 04.07.15
+ * Time: 2:17
+ */
+
+
+add_filter( 'template_include', 'include_template_function', 1 );
+
+function include_template_function( $template_path ) {
+    if ( get_post_type() == 'wpem-article' ) {
+        if ( is_single() ) {
+            // checks if the file exists in the theme first,
+            // otherwise serve the file from the plugin
+            if ( $theme_file = locate_template( array ( 'single-wpem-article.php' ) ) ) {
+                $template_path = $theme_file;
+            } else {
+                $template_path = plugin_dir_path( __FILE__ ) . '/single-wpem-article.php';
+            }
+        }
+    }
+    return $template_path;
+}
+
+//function my_post_queries( $query ) {
+//    if (!is_admin() && $query->is_main_query()){
+//        $taxonomies = array ('wpem_compilation_articles');
+//        if(is_tax($taxonomies) || is_home())  {
+//            $query->set ('post_type', 'wpem_article');
+//        }
+//    }
+//}
+//add_action( 'pre_get_posts', 'my_post_queries' );
+
+/**
+ * Duplicate a post/page/custom post on publish or update
+ *
+ **/
+function wpml_translate_post( $post_id ) {
+
+    global $iclTranslationManagement, $sitepress;
+
+    if ( $post->post_type == 'wpem_article' )
+    {
+        // don't save for autosave
+        if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+            return $post_id;
+        }
+        // don't save for revisions
+        if ( isset( $post->post_type ) && $post->post_type == 'revision' ) {
+            return $post_id;
+        }
+
+        remove_action( 'save_post', 'wpml_translate_post' );
+
+        if( function_exists( 'icl_makes_duplicates' ) ) {
+            icl_makes_duplicates( $post_id );
+        }
+
+        add_action( 'save_post', 'wpml_translate_post' );
+    }
+}
+add_action( 'save_post', 'wpml_translate_post' );
